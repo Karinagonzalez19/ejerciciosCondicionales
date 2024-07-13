@@ -160,6 +160,7 @@ if (play1 === "piedra" && play2 === "tijera") {
 }
 //ejercicio once
 let colores = prompt("escriba un color :")
+
 switch (colores) {
     case "blanco":
     case "negro":
@@ -208,8 +209,8 @@ switch (operacion) {
     case "division":
         if (num2 === 0) {
             console.log("error");
-        
-        respuesta = num1 / num2;
+        }else{
+            respuesta = num1 / num2;
             console.log("el resultado de la division" + num1 + " / " + num2 + "es igual a" + respuesta);
         }
         break;
@@ -219,7 +220,7 @@ switch (operacion) {
 //ejercicio trece
 let cedula = parseInt(prompt("escriba su documento :"))
 let nombreCompleto = prompt("escriba su nombre completo :")
-let rh = prompt("escriba su tipo de sangre")
+let rh = prompt("escriba su tipo de sangre :")
 let fechaNacimiento = prompt("escriba su fecha de nacimiento (dia/mes/año) :")
 let lugarNacimiento = prompt("escriba su lugar de nacimiento :")
 let estatura = prompt("escriba su estatura :")
@@ -255,9 +256,11 @@ if (datos === "si") {
     console.log("Registro exitoso")
 }else if (datos === "no") {
     console.log("vuelve a intentarlo en 1 mes");
-
-console.log("no es permitido escriba si o no");
+}else{
+    console.log("no es permitido escriba si o no");
 }
+
+
 
 
 
